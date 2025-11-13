@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: zep-poke-mcp
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: ZEPAPIKEY
+        sync: false
